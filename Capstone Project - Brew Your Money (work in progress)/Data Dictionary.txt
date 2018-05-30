@@ -1,0 +1,111 @@
+1. age (numeric)
+   
+2. occupation
+   - 'admin.'
+   - 'blue-collar'
+   - 'entrepreneur'
+   - 'housemaid'
+   - 'management'
+   - 'retired'
+   - 'self-employed'
+   - 'services'
+   - 'student'
+   - 'technician'
+   - 'unemployed'
+   - 'unknown'
+
+3. marital: describes marital status
+   - 'divorced'
+   - 'married'
+   - 'single'
+   - 'unknown'
+   
+4. education
+   - 'basic.4y'
+   - 'basic.6y'
+   - 'basic.9y'
+   - 'high.school'
+   - 'illiterate'
+   - 'professional.course'
+   - 'university.degree'
+   - 'unknown'
+   
+5. default_credit: whether an individual has credit in default?
+(This column was dropped due to severe imbalance and ambiguity of variable).
+   - 'no'
+   - 'yes'
+   - 'unknown'
+   
+6. housing_loan: whether an individual has an existing housing loan?
+   - 'no'
+   - 'yes'
+   - 'unknown'
+   
+7. personal_loan: whether an individual has an existing personal loan?
+   - 'no'
+   - 'yes'
+   - 'unknown'
+
+
+
+***
+__Note:__ Variables 8 - 11 relate to the most recent contact details of the current campaign.
+
+8. contact
+   - 'cellular'
+   - 'telephone'
+   
+9. month: the month that the individual was last contacted
+   - Values range from 'jan'to 'dec'
+   
+10. day: the day of the week that the individual was last contacted
+   - Values range from 'mon'to 'fri'
+
+11. duration: duration of last call in (seconds)
+
+
+
+***
+__Note:__ Variables 12 to 15 refer to campaign attributes.
+
+12. contact_freq: number of contacts performed during this campaign (numeric)
+
+13. days_passed: number of days passed from last contact for the previous campaign.
+
+14. contact_bef: number of contacts performed before this campaign.
+
+15. prev_outcome: outcome of previous marketing campaign. 'nonexistent' is assumed to be for customers who were not part of the previous campaign.
+   - 'failure'
+   - 'success'
+   - 'nonexistent'
+
+
+
+***
+__Note:__ Variables 16 to 20 are social & economic attributes.
+
+16. emp_var_rate: employment variation rate, quarterly indicator.
+
+17. cpi_index: consumer price index, monthly indicator.
+
+18. cci_index: consumer confidence index, monthly indicator.
+
+19. e3m: euribor 3 month rate, daily indicator.
+
+20. employees: number of employees, quarterly indicator.
+
+
+
+***
+__Target variable:__
+
+21. subscription: did the customer subscribe or not.
+   - yes is represented by '1'
+   - no is represented by '0'
+   
+***
+__Feature engineered:__
+
+22. prev_part: whether individuals were previously contacted for another campaign.
+   - 1 (means yes)
+   - 0 (means no)
